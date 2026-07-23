@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ascend — Personal Development & Workout Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-dot">A</div>
+      <div class="brand-name">Ascend</div>
+    </div>
+    <div class="sidebar-profile">
+      <div class="avatar" id="avatarInitial">U</div>
+      <div class="profile-info">
+        <div class="pname" id="profileName">Pengguna</div>
+        <div class="pdate" id="profileSince">Ahli sejak —</div>
+      </div>
+    </div>
+    <nav class="nav-scroll" id="navScroll"></nav>
+    <div class="sidebar-footer">
+      <button class="sidebar-toggle" id="collapseBtn">
+        <span class="nav-icon arrow">◀</span><span class="label">Tutup Sidebar</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main" id="mainArea"></main>
+</div>
+
+<div class="toast" id="toast"></div>
+<div id="modalRoot"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
